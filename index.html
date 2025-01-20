@@ -267,20 +267,6 @@
         <div class="card" style="--bg-image: url('images/discord_chatgpt_project/A_concept_illustration_of_a_Discord_bot_integratin.jpg');" data-bs-toggle="modal" data-bs-target="#galleryModal2">
           <div class="content"><h2 class="title">ChatGPT Discord Bot</h2><p class="copy">Integrating ChatGPT into a Discord bot.</p><button class="btn">View Details</button></div>
         </div>
-        <!-- Card 2 => Opens Project Modal 2 -->
-        <div class="card" style="--bg-image: url('images/website_image_2.jpg');" data-bs-toggle="modal" data-bs-target="#projectModal2">
-          <div class="content"><h2 class="title">Design Project</h2><p class="copy">Aesthetic design principles to create stunning visuals.</p><button class="btn">View Details</button></div>
-        </div>
-
-        <!-- Card 3 => Opens Project Modal 3 -->
-        <div class="card" style="--bg-image: url('images/website_image_3.jpg');" data-bs-toggle="modal" data-bs-target="#projectModal3">
-          <div class="content"><h2 class="title">Innovation Project</h2><p class="copy">Showcasing groundbreaking innovation in tech.</p><button class="btn">View Details</button></div>
-        </div>
-
-        <!-- Card 4 => Opens Gallery Modal 1 -->
-        <div class="card" style="--bg-image: url('images/website_image_3.jpg');" data-bs-toggle="modal" data-bs-target="#galleryModal">
-          <div class="content"><h2 class="title">Gallery Project</h2><p class="copy">Browse a carousel of images and details.</p><button class="btn">View Gallery</button></div>
-        </div>
       </main>
       <!-- END: New Card Section -->
 
@@ -298,7 +284,7 @@
               <div class="row">
                 <!-- Left column: Project Description -->
                 <div class="col-md-4">
-                  <h4>Project Overview</h4>
+                  <h4 class="about-me">Project Overview</h4>
                   <p>This project explores the use of AI to analyze oil particles in holographic images efficiently. Leveraging machine learning models like U-Net and YOLOv5, it reduces processing time by up to 99%, enhancing rapid response capabilities for oil spill assessments.</p>
                   <p>Holographic cameras were used to capture underwater oil droplets, and AI models were applied to improve detection and classification accuracy compared to traditional methods.</p>
                   <div class="text-center mt-4">
@@ -387,7 +373,7 @@
         <div class="row">
           <!-- Left column: Project Description -->
           <div class="col-md-4">
-            <h4>Project Overview</h4>
+            <h4 class="about-me">Project Overview</h4>
             <p>This project focuses on analyzing point correspondences between two images for accurate alignment. By leveraging keypoint detection and feature matching, image registration accuracy is significantly improved.</p>
             <p>The methodology involves detecting features, finding correspondences, and applying transformation matrices to achieve optimal alignment.</p>
           </div>
@@ -441,13 +427,10 @@
               <div class="row">
                 <!-- Left column: Project Overview -->
                 <div class="col-md-4">
-                  <h4>Project Overview</h4>
-                  <p>
-                    This project leverages AI technology to detect and track whales from aerial images and videos.
-                    Advanced deep learning models process footage captured by drones to improve wildlife monitoring 
-                    and conservation efforts.
-                  </p>
-                  
+                  <h4 class="about-me" >Project Details</h4>
+                  <p>The client had 200 pictures of beluga whales captured from a drone.  The goal was to locate the whales in the images.  I trained a YOLOv5 object recognition network to draw bounding boxes around the beluga whales with impressive results.</p>
+                  <p>This model was later used for transfer learning to track different species of whales taken from drone footage.  The gif on the right shows the results from the final model.</p>
+                  <p>The difficulty of this project was the small dataset.  I employed several techniques such as transfer learning and data augmentation in order to get as much performance out of the model as possible.</p>
                 </div>
 
                 <!-- Right column: Carousel -->
@@ -482,113 +465,6 @@
           </div>
         </div>
       </div>
-      <!-- Modal for Project 2 -->
-      <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModalLabel2" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-scrollable">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="projectModalLabel2">Design Project</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="row">
-                <div class="col-md-6">
-                  <h4>Project Details</h4>
-                  <p>This project focuses on aesthetic design principles to create stunning visuals.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
-                </div>
-                <div class="col-md-6">
-                  <img class="img-fluid rounded" src="images/website_image_2.jpg" alt="Design Project" />
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Modal for Project 3 -->
-      <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModalLabel3" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-scrollable">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="projectModalLabel3">Innovation Project</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="row">
-                <div class="col-md-6">
-                  <h4>Project Details</h4>
-                  <p>This project showcases groundbreaking innovation in the tech industry.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
-                </div>
-                <div class="col-md-6">
-                  <img class="img-fluid rounded" src="images/website_image_3.jpg" alt="Innovation Project" />
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- New Gallery Modal 1 -->
-      <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-scrollable">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="galleryModalLabel">Image Gallery</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="row">
-                <!-- Left column: Text -->
-                <div class="col-md-4">
-                  <h4>Gallery Description</h4>
-                  <p>Click the arrows or swipe to scroll through images.</p>
-                </div>
-                <!-- Right column: Carousel -->
-                <div class="col-md-8">
-                  <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                      <!-- Slide 1 -->
-                      <div class="carousel-item active">
-                        <img src="images/website_image_1.jpg" class="d-block w-100" alt="Image 1" />
-                      </div>
-                      <!-- Slide 2 -->
-                      <div class="carousel-item">
-                        <img src="images/website_image_2.jpg" class="d-block w-100" alt="Image 2" />
-                      </div>
-                      <!-- Slide 3 -->
-                      <div class="carousel-item">
-                        <img src="images/website_image_3.jpg" class="d-block w-100" alt="Image 3" />
-                      </div>
-                    </div>
-                    <!-- Carousel Controls -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-                  <!-- End of Carousel -->
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <!-- New Gallery Modal 2-->
       <div class="modal fade" id="galleryModal2" tabindex="-1" aria-labelledby="galleryModalLabel2" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-scrollable">
@@ -601,7 +477,7 @@
               <div class="row">
                 <!-- Left column: Text -->
                 <div class="col-md-4">
-                  <h4>Gallery Description</h4>
+                  <h4 class="about-me">Gallery Description</h4>
                   <p>I was tasked with integrating chatGPT to a Discord bot in development.  I used the OpenAI API with NodeJS and Python to read user prompts and send the reply to Discord's chat.  I included custom system setup for chatGPT to understand the name of the bot and it's function to provide entertaining responses.  Because of Discord's character limit, responses exceeding the character limit are split into several messages.</p>
                   <p>The bot has short-term memory and is able to recall previous recent conversations.  It is also able to distinguish between different users and understand separate chat history between users (for example assigning a nickname to users or responding in certain languages to certain users)</p>
                   <p>Click the arrows or swipe to scroll through images.</p>
