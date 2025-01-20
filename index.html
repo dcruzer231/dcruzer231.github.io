@@ -284,9 +284,24 @@
               <div class="row">
                 <!-- Left column: Project Description -->
                 <div class="col-md-4">
-                  <h4 class="about-me">Project Overview</h4>
-                  <p>This project explores the use of AI to analyze oil particles in holographic images efficiently. Leveraging machine learning models like U-Net and YOLOv5, it reduces processing time by up to 99%, enhancing rapid response capabilities for oil spill assessments.</p>
-                  <p>Holographic cameras were used to capture underwater oil droplets, and AI models were applied to improve detection and classification accuracy compared to traditional methods.</p>
+                    <h4 class="about-me">Gallery Description</h4>
+                    <p>Oil underwater is often in the form of micro-sized oil droplets, making it very difficult to quantify underwater oil spills.  Autonomous Underwater Vehicles are being used to monitor oil spills in the ocean.  These vehicles use a special camera called the holographic camera to capture images of these oil droplets.  Special software can process these images to provide different focal planes from a single image.  While useful to capture several several oil droplets at once, it is difficult to measure and quantify the oil droplets because of the processing time and difficulty in processing these images.</p>
+                    <p>
+                    My thesis focused on methods to speed up processing these images.  Three methods to process these images were developed:
+                    </p><ul>
+                      <li>
+                        Traditional computer vision technique: This technique used edge detection to find the oil droplets
+                      </li>
+                      <li>
+                        Semantic Segmentation ML Model: This technique used a U-Net to segment the images based on supervised learning
+                      </li>
+                      <li>
+                        YOLOv5 Object Detection ML Model: This technique used a YOLO 
+                      </li>
+                    </ul>
+                    model to detect the oil droplets and draw a bounding box around the droplet.<p></p>
+        
+                    <p>Compared to the traditional computer vision technique, the machine learning techniques found more particles and had a speed up of 250% in execution time.</p>
                   <div class="text-center mt-4">
                     <a href="files/Oil_Particle_Analysis_Using_Machine_Learning_and_Holography_Imaging-compressed.pdf" 
                       download="Oil_Particle_Analysis_Using_Machine_Learning_and_Holography_Imaging-compressed.pdf" 
@@ -538,7 +553,7 @@
             </form>
           </div>
         </div>
-       
+
       </div>
     </footer>
     <!-- end footer -->
