@@ -107,6 +107,23 @@ a:hover { color: #6ea151; }
   opacity: 1;
   margin: 0;
 }
+.custom-caption h5  {
+  color: yellow !important;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.custom-caption p {
+  color: yellow !important;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  text-align: center;
+}
 
 .about-me{color: #000 !important } 
 @import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
